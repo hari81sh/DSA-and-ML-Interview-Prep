@@ -6,7 +6,9 @@ class Build_Array_from_permutation:
         #        ans[i] = nums[nums[i]]
         #ans=[nums[nums[i]] for i in range(len(nums))]
         #return ans
-        return [nums[nums[i]] for i in range(len(nums))]
+        #return [nums[nums[i]] for i in range(len(nums))]
+        a=[nums[i] for i in nums]
+        return a
         
     
     if __name__ =="__main__":
