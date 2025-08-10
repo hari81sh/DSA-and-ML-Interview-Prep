@@ -1,4 +1,19 @@
+class Words_Containing_Character:
+
+    def __init__(self):
+         pass
+
+    def findWordsContaining(words: list[str], x: str) -> list[int]:
+        ans=[]
+        for i in range(len(words)):
+            if x in words[i]: ans.append(i)
+        return ans
+    
 class Build_Array_from_permutation:
+
+    def __init__(self):
+        pass
+
     def build_array(nums:list[int]) -> list[int]:
         #ans = [0 for _ in range(len(nums))]
         #if max(nums)<len(nums):
@@ -9,10 +24,3 @@ class Build_Array_from_permutation:
         #return [nums[nums[i]] for i in range(len(nums))]
         a=[nums[i] for i in nums]
         return a
-        
-    
-    if __name__ =="__main__":
-        nums = [0,2,1,5,3,4]
-        #nums = [5,0,1,2,3,4]
-        out = build_array(nums)
-        print(out)
